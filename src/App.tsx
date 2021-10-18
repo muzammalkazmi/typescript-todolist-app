@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {TodoListItem} from './TodoListItem'
+
 
 function App() {
+  const todos:Todo[]=[
+    {text:'Reconcile the invoices with tppl',completed:true},
+    {text:'Reconcile the bank statements',completed:false}
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React ToDo List App with Typescript</h1>
+      <ul>
+      <TodoListItem todo={todos[0]}/>
+      <TodoListItem todo={todos[1]}/>
+      </ul>
+      
     </div>
   );
 }
