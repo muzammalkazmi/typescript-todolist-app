@@ -1,7 +1,8 @@
 interface Todo{
-    text:string,
+    text:string
     completed:boolean
 }
 interface Props{
-    todo:Todo;
+    todo:Todo[]
+    toggleTodo:(selectedTodo:Todo)=>void
 }
