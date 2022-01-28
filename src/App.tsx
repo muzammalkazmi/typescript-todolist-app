@@ -28,7 +28,7 @@ setTodos(newTodo)
   return(
   <div>
       
-      <TodoList todo={todos} toggleTodo={toggleTodos}/>
+      <TodoList todos={todos} toggleTodo={toggleTodos}/>
       
     </div>
   );
